@@ -1,0 +1,35 @@
+name: Generate snake
+
+on:
+  # run every day at 00:00 UTC
+  schedule:
+    - cron: "0 0 * * *"
+  # allow manual runs
+  workflow_dispatch:
+  # also run when you push to main (optional)
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 1) Generate the images (SVG + dark mode + optional GIF)
+      - name: Generate snake files
+        uses: Platane/snk@v3
+        with:
+          github_user_name: inspiringdev
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            # uncomment next line if you also want a GIF:
+            # dist/github-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
+      # 2) Publish the generated files to the `output` branch
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

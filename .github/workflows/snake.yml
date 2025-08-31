@@ -3,7 +3,7 @@ name: Generate snake
 on:
   # run every day at 00:00 UTC
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "22 16 * * *"
   # allow manual runs
   workflow_dispatch:
   # also run when you push to main (optional)

@@ -62,7 +62,7 @@
 # 🏆 GitHub Trophies
 <div align="center">
 
-![](https://github-profile-trophy.vercel.app/?username=inspiringdev&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+![](https://github-profile-trophy.vercel.app/?username=inspiringdev&theme=onestar&no-frame=false&no-bg=true&margin-w=4)
 
 </div>
 

@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&text=👋%20Hi%20there%20,Ubaid%20here%20!&fontSize=30&fontAlignY=80&color=gradient&customColorList=16" alt="Hi 👋, I'm Ubaid" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&text=👋%20Hi%20there,%20Ubaid%20here!%20&fontSize=30&fontAlignY=80&color=gradient&customColorList=16" alt="Hi 👋, I'm Ubaid" />
 
 <hr></hr>
 

@@ -14,6 +14,8 @@
 
 # 💫 About Me:
 <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
+
+🎓 **CS Major** at [NUST](https://nust.edu.pk/)<br>
 💻 Passionate about coding and problem-solving<br>
 📚 Always learning new technologies and improving skills<br>
 🤝 Open to collaboration on exciting projects<br>
@@ -21,9 +23,8 @@
 🔍 Curious about Open Source & Modern Frameworks<br>
 💡 Thrive on solving challenging real-world problems<br>
 ⚡ Enjoy experimenting with new frameworks & tools<br>
-🎯 Focused on continuous growth and self-improvement<br>
 🌍 Excited to build impactful solutions that make a difference<br>
-<br>
+
 
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=inspiringdev&label=Profile%20Hits&color=2ecc71&style=for-the-badge" alt="inspiringdev" />
@@ -44,6 +45,12 @@
 <div align="center">
 
 <br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/inspiringdev/inspiringdev/main/profile-3d-contrib/profile-night-rainbow.svg">
+  <img alt="GitHub Contributions 3D" src="https://raw.githubusercontent.com/inspiringdev/inspiringdev/main/profile-3d-contrib/profile-night-rainbow.svg">
+</picture><br/><br/><br/>
+
 <!-- GitHub Stats -->
 <a href="https://github.com/inspiringdev">
   <img src="https://github-readme-stats.vercel.app/api?username=inspiringdev&theme=highcontrast&hide_border=true&border_radius=15&include_all_commits=true&count_private=true" alt="GitHub Stats"/>

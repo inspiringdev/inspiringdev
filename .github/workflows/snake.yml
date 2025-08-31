@@ -13,8 +13,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # ✅ this line gives write access to push the SVGs
+
     steps:
-      # 1) Generate the images (SVG + dark mode + optional GIF)
+      # 1) Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2) Generate the images (SVG + dark mode + optional GIF)
       - name: Generate snake files
         uses: Platane/snk@v3
         with:
@@ -25,7 +33,7 @@ jobs:
             # uncomment next line if you also want a GIF:
             # dist/github-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
-      # 2) Publish the generated files to the `output` branch
+      # 3) Publish the generated files to the `output` branch
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:

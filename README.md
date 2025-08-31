@@ -1,6 +1,11 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&text=👋%20Hi%20there,%20Ubaid%20here!%20&fontSize=30&fontAlignY=80&color=gradient&customColorList=16" alt="Hi 👋, I'm Ubaid" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&text=Hello%20World,%20I'm%20Ubaid!%20&fontSize=30&fontAlignY=80&color=gradient&customColorList=16" alt="Hi 👋, I'm Ubaid" />
 
 <hr></hr>
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&center=true&vCenter=true&width=550&height=60&lines=Full+Stack+Developer;Quantum+Computing+Enthusiast;AI+%26+ML+Explorer;Unity+Game+Developer;Digital+Creator" alt="Typing SVG" />
+  </a>
+</p>
 
 ![MasterHead](https://user-images.githubusercontent.com/61057666/169029838-74df663d-2e62-4d77-bdff-b43f7d63f00f.png)
 

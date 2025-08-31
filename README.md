@@ -5,7 +5,7 @@
 ![MasterHead](https://user-images.githubusercontent.com/61057666/169029838-74df663d-2e62-4d77-bdff-b43f7d63f00f.png)
 
 **Driven and adaptable professional with a strong technical foundation and a problem-solving mindset. I excel at embracing new challenges, learning quickly, and applying innovative solutions to real-world issues. With a passion for continuous growth and delivering results, I thrive in fast-paced environments where creativity and efficiency are key to success.**
-
+<br>
 
 # 💫 About Me:
 <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">

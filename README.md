@@ -17,6 +17,7 @@
 💡 Thrive on solving challenging real-world problems<br>
 ⚡ Enjoy experimenting with new frameworks & tools<br>
 🎯 Focused on continuous growth and self-improvement<br>
+🌍 Excited to build impactful solutions that make a difference<br>
 <br>
 
 <p align="left">

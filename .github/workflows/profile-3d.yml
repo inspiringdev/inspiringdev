@@ -1,9 +1,8 @@
-name: Fake-3D-Contrib
+name: GitHub-Profile-3D-Contrib
 
 on:
-  schedule:
-    # Runs daily at 00:00 UTC
-    - cron: "0 0 * * *"
+  schedule: # 03:00 JST == 18:00 UTC
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -12,48 +11,35 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: |
-          npm init -y
-          npm install github-contributions-canvas
-
-      - name: Generate Fake Graph
-        run: |
-          cat > fake-graph.js <<'EOF'
-          import fs from "fs";
-          import { generateSvg } from "github-contributions-canvas";
-
-          // 53 weeks × 7 days = 371 slots
-          const contributions = [];
-          for (let i = 0; i < 371; i++) {
-            // Change this to control "intensity"
-            contributions.push(Math.floor(Math.random() * 30));
-          }
-
-          const svg = generateSvg({
-            data: contributions,
-            themeName: "classic", // change theme here
-            username: "Fake Graph",
-          });
-
-          fs.writeFileSync("fake-graph.svg", svg);
-          console.log("✅ Fake graph generated: fake-graph.svg");
-          EOF
-
-          node fake-graph.js
-
+      - uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
       - name: Commit & Push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add fake-graph.svg
-          git commit -m "Update fake 3D contribution graph" || echo "No changes"
+          git add -A .
+          if git commit -m "generated"; then
+            git push
+
+---
+
+# Optional: if you want the scheduled faked commits part updated
+jobs:
+  ubaid-commits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate ubaid commits
+        run: |
+          for i in {1..5}; do
+            echo $RANDOM >> ubaid.txt
+            git add ubaid.txt
+            GIT_COMMITTER_DATE="$(date -d "$((RANDOM % 30 + 1)) days ago")" \
+            git commit --date "$(date -d "$((RANDOM % 30 + 1)) days ago")" -m "ubaid commit $i"
+          done
           git push

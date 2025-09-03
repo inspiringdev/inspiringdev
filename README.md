@@ -23,7 +23,7 @@
 🔍 Curious about Open Source & Modern Frameworks<br>
 💡 Thrive on solving challenging real-world problems<br>
 ⚡ Enjoy experimenting with new frameworks & tools<br>
-🌍 Excited to build impactful solution that make a difference<br>
+🌍 Excited to build impactful solutions that make a difference<br>
 
 
 <p align="left">
